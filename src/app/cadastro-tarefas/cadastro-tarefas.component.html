@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Cadastro de Tarefas</h5>
+      <p class="card-text">Para criar uma tarefa, informe os dados abaixo:</p>
+  
+      
+      
+      <form #formLogin="ngForm" autocomplete="off">
+  
+        <div class="row">
+            <div class="col-md-6">
+              <label>Nome da Tarefa:</label>
+              <input type="text" class="form-control" 
+                  name="nome"
+                  ngModel/>
+            </div>
+  
+            <div class="col-md-3">
+              <label>Data de Início:</label>
+              <input type="date" class="form-control" 
+                  name="dataInicio"
+                  ngModel/>
+            </div>
+  
+            <div class="col-md-3">
+              <label>Data de Término:</label>
+              <input type="date" class="form-control" 
+                  name="dataFim"
+                  ngModel/>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+              <label>Descrição:</label>
+              <textarea class="form-control" 
+                  name="descricao"
+                  ngModel></textarea>
+            </div>
+        </div>
+  
+        <br>
+  
+        <input type="submit" value="Cadastrar Tarefa"
+            class="btn btn-success"/>
+  
+      </form>
+  
+    </div>
+  </div>

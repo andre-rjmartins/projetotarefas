@@ -1,0 +1,24 @@
+<div class="container mt-4">
+
+  <h2>Sistema de Controle de Tarefas</h2>
+  <p>Aplicação desenvolvida em Angular com BACKEND em SpringBoot API Rest, JPA e Hibernate.</p>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-3">
+
+      <div class="d-grid gap-2">
+        <a routerLink="login" class="btn btn-outline-primary">Acessar Sistema</a>
+        <a routerLink="register" class="btn btn-outline-primary">Criar Conta de Usuário</a>
+        <a routerLink="cadastro-tarefas" class="btn btn-outline-primary">Cadastrar Tarefas</a>
+        <a routerLink="consulta-tarefas" class="btn btn-outline-primary">Consultar Tarefas</a>
+      </div>
+
+
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Acessar Sistema</h5>
+    <p class="card-text">Para acessar sua conta de usuário, informe os dados abaixo:</p>
+
+    <div class="text-danger">
+      <ul>
+          <li *ngFor="let item of mensagens_erro">{{item}}</li>
+      </ul>
+    </div>
+
+    <div class="text-success">
+      <ul>
+          <li *ngFor="let item of mensagens_sucesso"><strong>{{item}}</strong></li>
+      </ul>
+    </div>
+    
+    <form #formLogin="ngForm" (submit)="autenticarUsuario(formLogin)" autocomplete="off">
+
+      <label>Email de Acesso:</label>
+      <input type="text" class="form-control" 
+          name="email"
+          ngModel
+          placeholder="Ex: joaosilva@gmail.com"/>
+      <br/>
+
+      <label>Senha de Acesso:</label>
+      <input type="password" class="form-control" 
+          name="senha" 
+          ngModel
+          placeholder="Digite aqui"/>
+      <br/>
+
+      <input type="submit" value="Acessar Sistema"
+          class="btn btn-success"/>
+
+    </form>
+
+  </div>
+</div>
